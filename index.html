@@ -2,9 +2,9 @@
 <head>
     <title>Lighthouse</title>
     <link href="assets/style.css" rel="stylesheet" type="text/css">
-    <script src="assets/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/jquery-1.9.1.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <script src="assets/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </head>
 <body>
 	<div id="background">
@@ -17,7 +17,23 @@
 		<div id="right">
 			<div id="title">LIGHTHOUSE</div>
 			<div id="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-			<div id="signin">get started</div>
+			<div id="signin" class="button">get started</div>
 		</div>
+
+		<div id="modal-container">
+		<div id="modal-overlay"></div>
+			<div id="modal-box">
+				<div id="modal-header">Login</div>
+				<div id="modal-subheader">New to Lighthouse? <a href="sign_up">Sign up here</a></div>
+				<div id="modal-content">
+					<input type = "text" class = "login-input" placeholder = "Enter Username"/>
+					<input type = "text" class = "login-input" placeholder = "Enter Password"/>
+				</div>
+				<div id="modal-footer">
+					<a href="suggest.html"><div id="submit" class="button">Submit</div></a>
+					<div id="cancel" class="button">Cancel</div>
+				</div>
+			</div>
+	</div>
 	</div>
 </body>

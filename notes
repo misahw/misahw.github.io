@@ -8,3 +8,9 @@ Questions
 
 One page layout, except each page still has its own html file? e.g., netflix nav bar doesnt move when you click to go to a new category, but the page link chages 
 	animate transisions between pages
+
+This curve contains values out of range. But fear not young padawan! Just use cubic-bezier(.58,.01,.39,1) as well for Webkit until the bug #45761 fix propagates to Safari.
+
+
+
+colors
