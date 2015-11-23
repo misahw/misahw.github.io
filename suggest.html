@@ -14,9 +14,9 @@
 	<div id="header">
 		<img class="img-scaled-h" src="assets/img/lighthouse.png"> Lighthouse
 	</div>
-	<!-- <div class="wrapper"> -->
+	<div class="container">
 		<div class="overlay"></div>
-		<div class="content">
+		<!-- <div class="wrapper"> -->
 			<div class="nav">
 				<div class="user-info">
 					<div class="user-pic">
@@ -34,18 +34,37 @@
 				</div>
 				<div class="links">
 					<ul>
-						<li id="suggestions"><div class="nav-button">Suggest a movie</div></li>
-						<li id="explore"><div class="nav-button">Explore</div></li>
-						<li id="movies"><div class="nav-button">Rated movies</div></li>
-						<li id="watchlist"><div class="nav-button">Saved for later</div></li>
-						<li id="settings"><div class="nav-button">Account settings</div></li>
-						<li id="help"><div class="nav-button">Help</div></li>
-						<li id="about"><div class="nav-button">About</div></li>
+						<a href="suggest.html"><li id="suggestions">Suggest a movie</li></a>
+						<li id="explore">Explore</li>
+						<a href="my_movies.html"><li id="movies">Rated movies</li></a>
+						<li id="watchlist">Saved for later</li>
+						<li id="settings">Account settings</li>
+						<li id="help">Help</li>
+						<li id="about">About</li>
+						<a href="index.html"><li id="logout">Logout</li></a>
 					</ul>
 				</div>
 			</div>
-			
+
+			<div class="content">
+				<div class="title-bar">What should I watch next?</div>
+				<div id="carousel-container">
+					<div id="carousel">
+	                        <div class="carousel-item">
+	                            <div class="movie">
+	                                
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <!-- <div id="carousel-prev">
+	                        <img class="img-scaled" src="assets/img/arrowleft.png" />
+	                    </div>
+	                    <div id="carousel-next">
+	                        <img class="img-scaled" src="assets/img/arrowright.png" /> -->
+	                    </div>
+	                </div>
+	            <!-- </div> -->
+			</div>
 		</div>
-		
-	<!-- </div> -->
+	</div>	
 </body>

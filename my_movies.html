@@ -1,21 +1,58 @@
 <html> 
 <head>
-    <title>Lighthouse</title>
+    <title>Lighthouse: rated movies</title>
     <link href="assets/style2.css" rel="stylesheet" type="text/css">
-    <script src="assets/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/jquery-1.9.1.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <script src="assets/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </head>
-<body>
+</head>
+<body id="movies">
 	<div id="background">
 		<img src="assets/img/bg.jpg" />
 	</div>
 	<div id="header">
 		<img class="img-scaled-h" src="assets/img/lighthouse.png"> Lighthouse
 	</div>
-	<div id="wrapper">
-		<div id="overlay"></div>
-		<div id="content"></div>
-		
-	</div>
+	<div class="container">
+		<div class="overlay"></div>
+		<div class="wrapper">
+			<div class="nav">
+				<div class="user-info">
+					<div class="user-pic">
+						<img src="assets/img/user.jpg">
+					</div>
+					<div class="stats">
+						<ul>
+							<li id="username">misahpea</li>
+							<li id="friends">25 friends</li>
+							<li id="ratings">30 movies rated</li>
+						</ul>
+
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="links">
+					<ul>
+						<a href="suggest.html"><li id="suggestions">Suggest a movie</li></a>
+						<li id="explore">Explore</li>
+						<a href="my_movies.html"><li id="movies">Rated movies</li></a>
+						<li id="watchlist">Saved for later</li>
+						<li id="settings">Account settings</li>
+						<li id="help">Help</li>
+						<li id="about">About</li>
+						<a href="index.html"><li id="logout">Logout</li></a>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<div class="nav-button">
+				</div>
+				<div class="title-bar">Rated movies</div>
+				<div class="tiles-container">
+					<div class="movie-tile"></div>
+				</div> 
+			</div>
+		</div>
+	</div>	
 </body>
