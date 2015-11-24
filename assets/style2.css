@@ -29,7 +29,8 @@ a,a:hover,a:visited{
 }
 .container{
 	width: 100%;
-	height: calc(100% - 75px);
+	/*height: calc(100% - 75px);*/
+	height: 100%;
 	position: absolute;
 	top:75px;
 	padding: 0;
@@ -53,6 +54,10 @@ a,a:hover,a:visited{
     transform: translateX(-50%);
 	color:white;
 	font-size: 42px;
+	opacity: 1;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s; 
 }
 #header img{
 	width: 30px;

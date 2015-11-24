@@ -10,5 +10,12 @@ $(document).ready(function(){
 			$(".wrapper").removeClass("nav-closed");
 		}
 	});
+	$(".container").waypoint(function(direction){
+		if (direction=="down"){
+			$("#header").css("opacity", "0");
+		} else{
+			$("#header").css("opacity", "1");
+		}
+	});
 
 });
