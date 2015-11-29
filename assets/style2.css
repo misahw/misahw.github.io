@@ -15,6 +15,10 @@ a,a:hover,a:visited{
 .img-scaled-h{
 	height: 100%;
 }
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
 
 #background {
     position: fixed;
@@ -52,6 +56,8 @@ a,a:hover,a:visited{
     height: 70px;
     padding-top: 5px;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
 	color:white;
 	font-size: 42px;
 	opacity: 1;
@@ -77,6 +83,8 @@ a,a:hover,a:visited{
 }
 .nav-button-active{
 	transform: translateX(220px);
+	-webkit-transform: translateX(220px);
+	-moz-transform: translateX(220px);
 }
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
 	height: 3px;
@@ -100,8 +108,6 @@ a,a:hover,a:visited{
 	background-color: black;
 	position: absolute;
 	top: 0px;
-/*	left: 0px;
-*/	/*display: none;*/
 	transform: translateX(-220px);
 	-webkit-transform: translateX(-220px);
 	-moz-transform: translateX(-220px);
@@ -111,6 +117,8 @@ a,a:hover,a:visited{
 }
 .nav-active{
 	transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
 }
 .links ul {
 	margin: 0;
@@ -124,7 +132,6 @@ a,a:hover,a:visited{
 }
 .links li:hover{
 	color: #d82f2f;
-	/*border-bottom-color: #004e98;*/
 	border-right-color: #004e98;
 
 }
@@ -133,8 +140,6 @@ a,a:hover,a:visited{
 	height: 100px;
 	font-size: 12px;
 	color: #3a6ea5;
-	/*background-color: rgba(192, 192, 192, 0.2);*/
-	/*border-bottom: solid 2px #004e98;*/
 }
 .user-pic{
 	width: 80px;
@@ -157,6 +162,8 @@ a,a:hover,a:visited{
 	position: relative;
 	top:50%;
 	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
 }
 .stats ul{
 	margin: 0;
@@ -212,12 +219,119 @@ a,a:hover,a:visited{
 
 /*suggestions page css*/
 #carousel-container{
-	width: 350px;
+	width: 500px;
 	height: 450px;
-	background-color: pink;
 	margin: auto;
 	overflow: hidden;
 	position: relative;	
 }
-
+#carousel{
+	width: 2500px;
+	height: 100%;
+	margin-left: 0px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+.carousel-item{
+	width: 500px;
+	position: relative;
+	height: 100%;
+	float: left;
+}
+.movie{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+#carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 0px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: .3;
+}
+#carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 0px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 1;
+}
+.movie-info{
+	width: 316px;
+	height: 450px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+.movie-title{
+	height: 80px;
+	width: 296px;
+	background-color: rgba(0,0,0,.8);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+	padding:10px;
+}
+.movie-title-text{
+	color: white;
+	font-size: 30px;
+	position: relative;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+   	transform: translateY(-50%);
+}
+.movie-rating{
+	height: 80px;
+	width: 296px;
+	background-color: rgba(0,0,0,.8);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 5;
+	padding:10px;
+}
+.stars{
+	font-size: 48px;
+	letter-spacing: 3px;
+	position: absolute;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+   	transform: translateY(-50%);
+}
+.empty{
+	color: white;
+}
+.full {
+	color: #ffcc00;
+	display: none;
+}
 /*rated movies page css*/

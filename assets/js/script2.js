@@ -18,4 +18,35 @@ $(document).ready(function(){
 		}
 	});
 
+
+	// carousel script
+	$('#carousel-next').click(function(){
+    var margin = parseInt($('#carousel').css('margin-left').replace("px", ""));
+    if (margin == -2000){
+      return false;
+    } else {
+      $('#carousel-prev').css('opacity', '1');
+      margin -= 500;
+      $('#carousel').css('margin-left', margin.toString() +"px");
+      if (margin == -2000){
+        $('#carousel-next').css('opacity', '.3');
+      }
+    }
+  });
+
+  //Implement the "slide to right" when the user clicks on #carousel-prev here
+  $('#carousel-prev').click(function(){
+    var margin = parseInt($('#carousel').css('margin-left').replace("px", ""));
+    if (margin == 0){
+      return false;
+    } else {
+      $('#carousel-next').css('opacity', '1');
+      margin += 500;
+      $('#carousel').css('margin-left', margin.toString() +"px");
+      if (margin == 0){
+        $('#carousel-prev').css('opacity', '.3');
+      };
+    }
+  });
+
 });
