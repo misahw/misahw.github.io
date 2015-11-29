@@ -33,8 +33,6 @@ $(document).ready(function(){
       }
     }
   });
-
-  //Implement the "slide to right" when the user clicks on #carousel-prev here
   $('#carousel-prev').click(function(){
     var margin = parseInt($('#carousel').css('margin-left').replace("px", ""));
     if (margin == 0){
@@ -47,6 +45,17 @@ $(document).ready(function(){
         $('#carousel-prev').css('opacity', '.3');
       };
     }
+  });
+
+  $('.hover-container').hover(function(){
+  	$('.movie-info').fadeIn(400);
+  }, function(){
+  	$('.movie-info').fadeOut(400);
+  });
+  $('.stars').mouseover(function(){
+  	alert("!");
+  	$('.full i').fadeIn(400);
+  
   });
 
 });

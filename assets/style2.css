@@ -239,8 +239,21 @@ a,a:hover,a:visited{
 	height: 100%;
 	float: left;
 }
+.hover-container{
+	width: 316px;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
 .movie{
 	position: absolute;
+	width: 316px;
+	overflow: hidden;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -288,6 +301,7 @@ a,a:hover,a:visited{
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
    	transform: translateX(-50%) translateY(-50%);
+   	display: none;
 }
 .movie-title{
 	height: 80px;
@@ -326,12 +340,30 @@ a,a:hover,a:visited{
 	-webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
    	transform: translateY(-50%);
+   	z-index: 500;
 }
 .empty{
 	color: white;
 }
 .full {
 	color: #ffcc00;
+}
+.full i{
 	display: none;
+}
+#carousel-end{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+	width: 256px;
+	height: 390px;
+	background-color: rgba(0, 0, 0, .8);
+	text-align: center;
+	padding:30px;
+	font-size: 24px;
+
 }
 /*rated movies page css*/
