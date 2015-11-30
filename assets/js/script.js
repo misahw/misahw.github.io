@@ -6,6 +6,12 @@ $(document).ready(function(){
 		$("#modal-box").animate({
 			left: "50%"
 		});
+		setTimeout(function(){
+			$('#notification').show();
+			setTimeout(function(){
+	  		$('#notification').fadeOut(300);
+	  		}, 3200);
+		},1300);
 	});
 	$("#cancel").click(function(){
 		$("#modal-box").hide();
@@ -19,4 +25,5 @@ $(document).ready(function(){
 		$("#modal-container").hide();
 		$("#modal-box").css("left", "-500px");
 	});
+
 });

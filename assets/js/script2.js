@@ -50,9 +50,11 @@ $(document).ready(function(){
 
   $('.movie,.movie-info').mouseover(function(){
   	$('.movie-info').fadeIn(400);
+  	$('.fa-search').fadeOut(400);
   });
   $('.movie-info').mouseleave(function(){
   	$(".movie-info").fadeOut(400);
+  	$('.fa-search').fadeIn(400);
   });
 
 // ratings script

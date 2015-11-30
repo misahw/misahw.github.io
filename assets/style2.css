@@ -245,6 +245,12 @@ a,a:hover,a:visited{
 #suggest .movie:hover{
 	cursor: pointer;
 }
+.fa-search{
+	position: absolute;
+	top:6px;
+	right: 6px;
+	z-index: 10000;
+}
 #carousel-prev {
     position: absolute;
     width: 40px;

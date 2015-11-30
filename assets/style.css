@@ -169,10 +169,27 @@ a,a:hover,a:visited{
     right:0px;
     padding: 13px;
 }
-
 #modal-footer .button {
     display: inline-block;
     margin: 2px;
     height: 35px;
     width: 80px;
+}
+
+#notification{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: rgba(58, 110, 165, .6);
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden; 
+    -webkit-box-shadow: 0 0 3px black;
+    -moz-box-shadow: 0 0 3px black;
+    box-shadow: 0 0 3px black;
+    display: none;
+    color: white;
 }
