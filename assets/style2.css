@@ -199,7 +199,7 @@ a,a:hover,a:visited{
 	width: 100%;
 	text-align: center;
 	color: #3a6ea5;
-	padding-bottom: 20px;
+	padding: 0px 50px 20px 50px;
 }
 .page-title{
 	font-size: 36px;
