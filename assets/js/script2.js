@@ -47,15 +47,94 @@ $(document).ready(function(){
     }
   });
 
-  $('.hover-container').hover(function(){
+
+  $('.movie,.movie-info').mouseover(function(){
   	$('.movie-info').fadeIn(400);
+  });
+  $('.movie-info').mouseleave(function(){
+  	$(".movie-info").fadeOut(400);
+  });
+
+  $('#e1').hover(function(){
+  	$('#e1').css("color", "#ffcc00");
   }, function(){
-  	$('.movie-info').fadeOut(400);
+  	$('#e1').css("color", "white");
   });
-  $('.stars').mouseover(function(){
-  	alert("!");
-  	$('.full i').fadeIn(400);
+  $('#e2').hover(function(){
+  	$('#e1,#e2').css("color", "#ffcc00");
+  }, function(){
+  	$('#e1,#e2').css("color", "white");
+  });
+  $('#e3').hover(function(){
+  	$('#e1,#e2,#e3').css("color", "#ffcc00");
+  }, function(){
+  	$('#e1,#e2,#e3').css("color", "white");
+  });
+  $('#e4').hover(function(){
+  	$('#e1,#e2,#e3,#e4').css("color", "#ffcc00");
+  }, function(){
+  	$('#e1,#e2,#e3,#e4').css("color", "white");
+  });
+  $('#e5').hover(function(){
+  	$('#e1,#e2,#e3,#e4,#e5').css("color", "#ffcc00");
+  }, function(){
+  	$('#e1,#e2,#e3,#e4,#e5').css("color", "white");
+  });
+
+  $('.fa-star-o, .fa-star').click(function(){
+  	var x = 5;
+  	while (x>0){
+  		$('.fa-star:nth-child(' + x + ')').hide();
+  		x-=1;
+  	}
+  	var id = parseInt($(this).attr('id').replace('e', '').replace('f', ''));
+  	while(id > 0){
+  		$('.fa-star:nth-child(' + id + ')').show();
+  		id-=1;
+  	};
+  })
+
+  // $('#e1, #f1').mouseover(function(){
+  // 	$('#f1').fadeTo(0,1);
+  // });
+  // $('#f1').mouseleave(function(){
+  // 	$('#f1').fadeTo(0,0);
+  // });
+  // $('#e2, #f2').mouseover(function(){
+  // 	$('#f1,#f2').fadeTo(0,1);
+  // });
+  // $('#f2').mouseleave(function(){
+  // 	$('#f1,#f2').fadeTo(0,0);
+  // });
+  // $('#e3, #f3').mouseover(function(){
+  // 	$('#f1,#f2,#f3').fadeTo(0,1);
+  // });
+  // $('#f3').mouseleave(function(){
+  // 	$('#f1,#f2,#f3').fadeTo(0,0);
+  // })
+  // $('#e4, #f4').mouseover(function(){
+  // 	$('#f1,#f2,#f3,#f4').fadeTo(0,1);
+  // });
+  // $('#f4').mouseleave(function(){
+  // 	$('#f1,#f2,#f3,#f4').fadeTo(0,0);
+  // });
+  // $('#e5, #f5').mouseover(function(){
+  // 	$('#f1,#f2,#f3,#f4,#f5').fadeTo(0,1);
+  // });
+  // $('#f5').mouseleave(function(){
+  // 	$('#f1,#f2,#f3,#f4,#f5').fadeTo(400,0);
+  // });
+
+
+
+
+  // $('.hover-container').hover(function(){
+  // 	$('.movie-info').fadeIn(400);
+  // }, function(){
+  // 	$('.movie-info').fadeOut(400);
+  // });
+
+
   
-  });
 
 });

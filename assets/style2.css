@@ -340,7 +340,7 @@ a,a:hover,a:visited{
 	-webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
    	transform: translateY(-50%);
-   	z-index: 500;
+   	z-index: 500000;
 }
 .empty{
 	color: white;
@@ -349,6 +349,7 @@ a,a:hover,a:visited{
 	color: #ffcc00;
 }
 .full i{
+	/*opacity: 0;*/
 	display: none;
 }
 #carousel-end{
