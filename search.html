@@ -1,0 +1,95 @@
+<html> 
+<head>
+    <title>Lighthouse: search and rate</title>
+    <link href="assets/style2.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/jquery-1.9.1.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="assets/js/script2.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body id="search">
+	<div id="background">
+		<img src="assets/img/bg.jpg" />
+	</div>
+	<div id="header">
+		<img class="img-scaled-h" src="assets/img/lighthouse.png"> Lighthouse
+	</div>
+	<div class="container">
+		<div class="overlay"></div>
+		<div class="nav-button nav-button-active">
+			<a class="nav-toggle">
+				<span></span>
+			</a>
+		</div>
+		<div class="nav nav-active">
+			<div class="user-info">
+				<div class="user-pic">
+					<img src="assets/img/user.jpg">
+				</div>
+				<div class="stats">
+					<ul>
+						<li id="username">misahpea</li>
+						<li id="friends">25 friends</li>
+						<li id="ratings">30 movies rated</li>
+					</ul>
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="links">
+				<ul>
+					<a href="suggest.html"><li id="suggestions">View suggestions</li></a>
+					<a href="search.html"><li id="search">Search and rate</li></a>
+					<a href="error.html"><li id="movies">Watched movies</li></a>
+					<a href="error.html"><li id="explore">Explore</li></a>
+					<a href="error.html"><li id="watchlist">Saved for later</li></a>
+					<a href="error.html"><li id="settings">Account settings</li></a>
+					<a href="error.html"><li id="help">Help</li></a>
+					<a href="error.html"><li id="about">About</li></a>
+					<a href="index.html"><li id="logout">Logout</li></a>
+				</ul>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="content">
+				<div id="notification">Your rating has been updated. Find this movie in your <a href="error.html">watched movies</a> list!</div>
+				<div class="title-bar">
+					<div class="page-title">Search for movies and rate them to refine your suggestions</div>
+					<div class="search">
+						<input class="search-bar" type="text" placeholder="Kiki's Delivery Service">
+                        <div class="button">Search</div>
+					</div>
+				</div>
+				<div class="search-container">
+					<div class="search-result">
+	                    <div class="movie">
+	                        <img class = "img-scaled" src="assets/img/kiki.jpg">
+	                    </div>
+	                    <div class="movie-info">
+	                    	<div class="movie-title">
+	                    		<div class="movie-title-text">Kiki's Delivery Service</div>
+	                    	</div>
+	                    	<div class="movie-rating">
+	                    		<div class="stars empty">
+	                    			<i class="fa fa-star-o" id="e1"></i>
+	                    			<i class="fa fa-star-o" id="e2"></i>
+	                    			<i class="fa fa-star-o" id="e3"></i>
+	                    			<i class="fa fa-star-o" id="e4"></i>
+	                    			<i class="fa fa-star-o" id="e5"></i>
+	                    		</div>
+	                    		<div class="stars full">
+	                    			<i class="fa fa-star" id="f1"></i>
+	                    			<i class="fa fa-star" id="f2"></i>
+	                    			<i class="fa fa-star" id="f3"></i>
+	                    			<i class="fa fa-star" id="f4"></i>
+	                    			<i class="fa fa-star" id="f5"></i>
+	                    		</div>
+	                    	</div>
+	                    </div>
+	                </div>
+				</div> 
+			</div>
+		</div>
+	</div>	
+</body>

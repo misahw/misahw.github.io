@@ -189,14 +189,7 @@ a,a:hover,a:visited{
 }
 .content{
 	width: 100%;
-	/*width: calc(100% - 220px);*/
-	/*height: 800px;*/
 	padding: 20px 10px 10px;
-	/*background-color: pink;*/
-	/*position: absolute;
-	left: 220px;
-	top:0px;
-	overflow: scroll;*/
 }
 .nav-closed{
 	width: 100%;
@@ -226,7 +219,7 @@ a,a:hover,a:visited{
 	position: relative;	
 }
 #carousel{
-	width: 2500px;
+	width: 3000px;
 	height: 100%;
 	margin-left: 0px;
 	transition: all 0.3s;
@@ -239,18 +232,7 @@ a,a:hover,a:visited{
 	height: 100%;
 	float: left;
 }
-.hover-container{
-	width: 316px;
-	height: 100%;
-	position: absolute;
-	z-index: 10;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-   	transform: translateX(-50%) translateY(-50%);
-}
-.movie{
+#suggest .movie{
 	position: absolute;
 	width: 316px;
 	overflow: hidden;
@@ -259,6 +241,9 @@ a,a:hover,a:visited{
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
    	transform: translateX(-50%) translateY(-50%);
+}
+#suggest .movie:hover{
+	cursor: pointer;
 }
 #carousel-prev {
     position: absolute;
@@ -303,6 +288,9 @@ a,a:hover,a:visited{
    	transform: translateX(-50%) translateY(-50%);
    	display: none;
 }
+#suggest .movie-info:hover{
+	cursor: pointer;
+}
 .movie-title{
 	height: 80px;
 	width: 296px;
@@ -322,9 +310,133 @@ a,a:hover,a:visited{
     -moz-transform: translateY(-50%);
    	transform: translateY(-50%);
 }
+.movie-title a:hover{
+	color:#d82f2f;
+}
+#carousel-end{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+	width: 256px;
+	height: 390px;
+	background-color: rgba(0, 0, 0, .8);
+	text-align: center;
+	padding:30px;
+	font-size: 24px;
+}
+
+/*search css*/
+#notification{
+	position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: rgba(58, 110, 165, .8);
+    text-align: center;
+    line-height: 40px;
+    overflow: hidden; 
+    -webkit-box-shadow: 0 0 3px black;
+    -moz-box-shadow: 0 0 3px black;
+    box-shadow: 0 0 3px black;
+    display: none;
+}
+#notification a{
+	text-decoration: underline;
+}
+#notification a:hover{
+	color: #d82f2f;
+}
+#search .page-title{
+	font-size: 30px;
+}
+.search-bar{
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    padding: 6px;
+    background: transparent;
+    margin: 0px;
+    margin-bottom: 20px;
+    width: 550px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+.search-bar::-webkit-input-placeholder{
+    color: white;
+}
+.button{
+	display: inline-block;
+    margin: 2px;
+    height: 29px;
+    width: 70px;
+    position: relative;
+    top: 1px;
+	text-align: center;
+	line-height: 29px;
+    color: #004e98;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#cccccc));
+    background: -moz-gradient(linear, left top, left bottom, from(#ebebeb), to(#cccccc));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#cccccc');
+    -webkit-border-radius: .3em; 
+	-moz-border-radius: .3em;
+	border-radius: .3em;
+	cursor: pointer;
+}
+.button:hover{
+    color: #d82f2f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#c0c0c0));
+    background: -moz-gradient(linear, left top, left bottom, from(#ebebeb), to(#c0c0c0));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#c0c0c0');
+}
+.button:active{
+    color: #d82f2f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c0c0c0), to(#ebebeb));
+    background: -moz-gradient(linear, left top, left bottom, from(#c0c0c0), to(#ebebeb));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0c0c0', endColorstr='#ebebeb');
+}
+.search-container{
+	width: 650px;
+	height: 585px;
+	margin: auto;
+}
+.search-result{
+	width: 650;
+	position: relative;
+	height: 100%;
+	float: left;
+}
+#search .movie{
+	position: absolute;
+	width: 411px;
+	overflow: hidden;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+}
+#search .movie-info{
+	width: 411px;
+	height: 585px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+   	transform: translateX(-50%) translateY(-50%);
+   	display: none;
+}
+#search .movie-title{
+	height: 90;
+	width: 391px;
+}
 .movie-rating{
-	height: 80px;
-	width: 296px;
+	height: 90px;
+	width: 391px;
 	background-color: rgba(0,0,0,.8);
 	position: absolute;
 	bottom: 0px;
@@ -342,6 +454,9 @@ a,a:hover,a:visited{
    	transform: translateY(-50%);
    	z-index: 500000;
 }
+.stars i:hover{
+	cursor: pointer;
+}
 .empty{
 	color: white;
 }
@@ -352,19 +467,3 @@ a,a:hover,a:visited{
 	/*opacity: 0;*/
 	display: none;
 }
-#carousel-end{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-   	transform: translateX(-50%) translateY(-50%);
-	width: 256px;
-	height: 390px;
-	background-color: rgba(0, 0, 0, .8);
-	text-align: center;
-	padding:30px;
-	font-size: 24px;
-
-}
-/*rated movies page css*/

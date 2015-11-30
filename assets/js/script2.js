@@ -22,13 +22,13 @@ $(document).ready(function(){
 	// carousel script
 	$('#carousel-next').click(function(){
     var margin = parseInt($('#carousel').css('margin-left').replace("px", ""));
-    if (margin == -2000){
+    if (margin == -2500){
       return false;
     } else {
       $('#carousel-prev').css('opacity', '1');
       margin -= 500;
       $('#carousel').css('margin-left', margin.toString() +"px");
-      if (margin == -2000){
+      if (margin == -2500){
         $('#carousel-next').css('opacity', '.3');
       }
     }
@@ -55,6 +55,7 @@ $(document).ready(function(){
   	$(".movie-info").fadeOut(400);
   });
 
+// ratings script
   $('#e1').hover(function(){
   	$('#e1').css("color", "#ffcc00");
   }, function(){
@@ -92,49 +93,11 @@ $(document).ready(function(){
   		$('.fa-star:nth-child(' + id + ')').show();
   		id-=1;
   	};
+  	$('#notification').show();
+  	setTimeout(function(){
+  		$('#notification').fadeOut(300);
+  		}, 4000);
   })
 
-  // $('#e1, #f1').mouseover(function(){
-  // 	$('#f1').fadeTo(0,1);
-  // });
-  // $('#f1').mouseleave(function(){
-  // 	$('#f1').fadeTo(0,0);
-  // });
-  // $('#e2, #f2').mouseover(function(){
-  // 	$('#f1,#f2').fadeTo(0,1);
-  // });
-  // $('#f2').mouseleave(function(){
-  // 	$('#f1,#f2').fadeTo(0,0);
-  // });
-  // $('#e3, #f3').mouseover(function(){
-  // 	$('#f1,#f2,#f3').fadeTo(0,1);
-  // });
-  // $('#f3').mouseleave(function(){
-  // 	$('#f1,#f2,#f3').fadeTo(0,0);
-  // })
-  // $('#e4, #f4').mouseover(function(){
-  // 	$('#f1,#f2,#f3,#f4').fadeTo(0,1);
-  // });
-  // $('#f4').mouseleave(function(){
-  // 	$('#f1,#f2,#f3,#f4').fadeTo(0,0);
-  // });
-  // $('#e5, #f5').mouseover(function(){
-  // 	$('#f1,#f2,#f3,#f4,#f5').fadeTo(0,1);
-  // });
-  // $('#f5').mouseleave(function(){
-  // 	$('#f1,#f2,#f3,#f4,#f5').fadeTo(400,0);
-  // });
-
-
-
-
-  // $('.hover-container').hover(function(){
-  // 	$('.movie-info').fadeIn(400);
-  // }, function(){
-  // 	$('.movie-info').fadeOut(400);
-  // });
-
-
-  
 
 });
