@@ -245,7 +245,7 @@ a,a:hover,a:visited{
 #suggest .movie:hover{
 	cursor: pointer;
 }
-.fa-search{
+.fa-chevron-down{
 	position: absolute;
 	top:6px;
 	right: 6px;
@@ -332,6 +332,12 @@ a,a:hover,a:visited{
 	text-align: center;
 	padding:30px;
 	font-size: 24px;
+}
+#carousel-end a{
+	text-decoration: underline;
+}
+#carousel-end a:hover{
+	color: d82f2f;
 }
 
 /*search css*/
