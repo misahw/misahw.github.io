@@ -96,11 +96,31 @@ $(document).ready(function(){
   		$('.fa-star:nth-child(' + id + ')').show();
   		id-=1;
   	};
-  	$('#notification').show();
+  	$('#n1').show();
   	setTimeout(function(){
-  		$('#notification').fadeOut(300);
+  		$('#n1').fadeOut(300);
   		}, 4000);
   })
 
+  $('.fa-plus-circle').hover(function(){
+    $('.fa-plus-circle').css("color", "#33cc33");
+  }, function(){
+    $('.fa-plus-circle').css("color", "white");
+  });
+  $('#save-later').click(function(){
+    if ($(this).hasClass('fa-plus-circle')){
+      $('#save-later').removeClass('fa-plus-circle');
+      $('#save-later').addClass('fa-plus');
+      $('#save-later').css("color", "#33cc33");
+      $('#n2').show();
+      setTimeout(function(){
+        $('#n2').fadeOut(300);
+        }, 2300);
+    } else {
+      $('#save-later').addClass('fa-plus-circle');
+      $('#save-later').removeClass('fa-plus');
+      $('#save-later').css("color", "white");
+    }
+  });
 
 });

@@ -337,7 +337,7 @@ a,a:hover,a:visited{
 }
 
 /*search css*/
-#notification{
+.notification{
 	position: fixed;
     z-index: 1000;
     top: 0;
@@ -353,10 +353,10 @@ a,a:hover,a:visited{
     box-shadow: 0 0 3px black;
     display: none;
 }
-#notification a{
+.notification a{
 	text-decoration: underline;
 }
-#notification a:hover{
+.notification a:hover{
 	color: #d82f2f;
 }
 #search .page-title{
@@ -439,8 +439,44 @@ a,a:hover,a:visited{
    	display: none;
 }
 #search .movie-title{
-	height: 90;
+	height: 100%;
 	width: 391px;
+}
+#search .movie-title-text{
+	top: 20px;	
+	-webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+   	transform: translateY(0);
+}
+#save-later{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 32px;
+	color: white;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s; 
+}
+/*#save-later:hover{
+	color:#33cc33;
+}*/
+.movie-summary{
+	width: 100%;
+	font-size: 12px;
+	position: relative;
+	top: 30px;
+	height: 390px;
+	overflow: scroll;
+}
+.movie-links{
+	position: relative;
+	top: 10px;
+	font-style: italic;
+	color: #3a6ea5;
+}
+.movie-links a{
+	text-decoration: underline;
 }
 .movie-rating{
 	height: 90px;
